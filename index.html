@@ -34,7 +34,7 @@
          <!-- All you need to put beautiful, interactive 3D content on your site: -->
          <model-viewer 
             id="model-viewer" 
-            src="assets/Ceiling2.glb?&link=https://zealar.com.au&title=Request Sample&resizable=false"
+            src="assets/Ceiling2.glb?&link=http://example.com&title=Request Sample&resizable=false"
             shadow-intensity="1" 
             ar 
             ar-modes="scene-viewer webxr quick-look"
@@ -101,12 +101,12 @@
       </div>
       <script>
          function myFunction() {
-            window.open("", "myWindow", 'width=800,height=600');
+            window.open("http://example.com", "myWindow", 'width=800,height=600');
          }
       </script>
       <script>
          function myFunctionRequest() {
-            window.open("", "myWindow", 'width=800,height=600');
+            window.open("http://example.com", "myWindow", 'width=800,height=600');
          }
       </script>
       <script>
@@ -152,7 +152,7 @@
          const linkElement = document.getElementById("ar-link");
          linkElement.addEventListener("message", function (event) {   
             if (event.data == "_apple_ar_quicklook_button_tapped") {
-                 window.open("", "myWindow", 'width=800,height=600');
+                 window.open("http://example.com", "myWindow", 'width=800,height=600');
             }
          }, false);
       </script>
